@@ -5,8 +5,8 @@ This jekyll site uses collections to iterate over markdown file front matter and
 
 Here is what the FOR loop looks like that using Jekyll's Liquid engine:
 
-![jekyll for loop over collections][images/forloop.PNG]
+<img src="images/forloop.PNG" />
 
 And here is a look at one of the markdown files with it's frontmatter
 
-![markdown frontmatter populating the table][images/markdown.PNG]
+<img src="images/markdown.PNG" />
