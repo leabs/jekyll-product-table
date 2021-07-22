@@ -672,43 +672,44 @@
   <body>
     <!--Site Container-->
     <div class="container content">
-      <!--Table Start-->
-      <table id="example" class="display" style="width: 100%">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Sku</th>
-            <th>Price</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <!--For loop that iterates over markdown frontmatter in _skus folder-->
-          {% for sku in site.skus %}
-          <tr>
-            <td>{{ sku.Name }}</td>
-            <td>{{ sku.Sku }}</td>
-            <td>{{ sku.Price }}</td>
-            <td>{{ sku.content | markdownify }}</td>
-          </tr>
-          {% endfor %}
-        </tbody>
-
-        <tfoot>
-          <tr>
-            <th>Name</th>
-            <th>Sku</th>
-            <th>Price</th>
-            <th>Description</th>
-          </tr>
-        </tfoot>
-      </table>
-
-      <!--Hero-->
-
       <section class="section">
         <h1 class="title">Jekyll Product Catalog</h1>
+        <br />
+        <!--Table Start-->
+        <table id="example" class="display" style="width: 100%">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Sku</th>
+              <th>Price</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!--For loop that iterates over markdown frontmatter in _skus folder-->
+            {% for sku in site.skus %}
+            <tr>
+              <td>{{ sku.Name }}</td>
+              <td>{{ sku.Sku }}</td>
+              <td>{{ sku.Price }}</td>
+              <td>{{ sku.content | markdownify }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <th>Name</th>
+              <th>Sku</th>
+              <th>Price</th>
+              <th>Description</th>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section class="section">
         <p class="">
           This jekyll site uses
           <a
