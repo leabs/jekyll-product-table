@@ -667,13 +667,15 @@
       integrity="sha256-L4cf7m/cgC51e7BFPxQcKZcXryzSju7VYBKJLOKPHvQ="
       crossorigin="anonymous"
     ></script>
+    <title>{{site.title}}</title>
+    <meta name="description" content="{{site.description}}" />
   </head>
 
   <body>
     <!--Site Container-->
     <div class="container content">
       <section class="section">
-        <h1 class="title">Jekyll Product Catalog</h1>
+        <h1 class="title">{{site.title}}</h1>
         <br />
         <!--Table Start-->
         <table id="example" class="display" style="width: 100%">
@@ -709,44 +711,11 @@
         </table>
       </section>
 
-      <section class="section">
-        <p class="">
-          This jekyll site uses
-          <a
-            href="https://jekyllrb.com/docs/step-by-step/09-collections/"
-            target="_blank"
-            >collections</a
-          >
-          to iterate over markdown file front matter and populates that data in
-          a table using the
-          <a href="https://www.datatables.net/" target="_blank">DataTables</a>
-          plug-in. This is a good set up for a business who wants to post
-          information such as specs of parts used in manufacturing. It is a
-          static site, so loading thousands of parts is as fast as possible,
-          secure since there is no back end, and can be organized as the owner
-          sees fit using the `_skus` folder as the repository for parts data. It
-          also uses <a href="https://bulma.io/">bulma</a> css framework to look
-          nice.
-        </p>
-        <p>
-          Here is what the FOR loop looks like that using Jekyll's Liquid
-          engine.
-        </p>
-        <img src="images/forloop.PNG" style="max-width: 100%; display: block" />
-        <br />
-        <p>
-          And here is a look at one of the markdown files with it's frontmatter
-        </p>
-        <img
-          src="images/markdown.PNG"
-          style="max-width: 100%; display: block"
-        />
-        <p>Below is a working example:</p>
-      </section>
-
       <script>
         $(document).ready(function () {
-          $("#example").DataTable();
+          $("#example").DataTable({
+            order: [[1, "asc"]],
+          });
         });
       </script>
     </div>
