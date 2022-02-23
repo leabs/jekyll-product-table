@@ -20,7 +20,7 @@ Jekyll is a Ruby Gem that can be installed on most systems. More install informa
 
 ### Deploy
 
-There are many options for deploying Jekyll sites. My current favorite option is [https://vercel.com/](Vercel) which can build and host your site. You can additionally set up domains in their dashboard.
+There are many options for deploying Jekyll sites. My current favorite option is [Vercel](https://vercel.com/) which can build and host your site. You can additionally set up domains in their dashboard.
 
 Other options include:
 
@@ -29,7 +29,7 @@ Other options include:
 - Netlify
 - GitLab pages
 
-More info on deployment methods (including automated options) can be found [https://jekyllrb.com/docs/deployment/](here.)
+More info on deployment methods (including automated options) can be found [here.](https://jekyllrb.com/docs/deployment/)
 
 ### Adding additional parts
 
