@@ -2,21 +2,21 @@
 
 This [Jekyll](https://jekyllrb.com/) site uses Jekyll collections to iterate over markdown file frontmatter and populates those properties into a sortable searchable table using the DataTables plug-in. This is a good set up for a light weight store of information for items such as parts with specs. It is a static site, so loading thousands of parts is as fast as possible, secure since there is no back end, and can be organized as the owner sees fit using the `_skus` folder as the repository for parts data. It also uses [bulma css framework](https://bulma.io/) for some basic styling (container, typography, table).
 
-### Required software:
+### Requirements
 
-Jekyll is a Ruby Gem that can be installed on most systems. More install information [here.](https://jekyllrb.com/docs/installation/#guides)
+To build and run this site locally, you will need
 
-- Ruby
-- RubyGems
-- GCC and Make
+- [Ruby](https://www.ruby-lang.org/en/)
+- [Bundler](https://bundler.io/)
+- [Jekyll](https://jekyllrb.com/)
 
 ### Install Locally
 
-- Clone or download the repository
-- Navigate to the repository directory
-- Run `bundle install` in the repository directory
-- Run `bundle exec jekyll serve`
-- Open [http://127.0.0.1:4000/](http://127.0.0.1:4000/)
+- Download, clone, or fork the repository.
+- Navigate to the repository directory.
+- Run `bundle install` in the repository directory.
+- Run `bundle exec jekyll serve`.
+- Open [http://127.0.0.1:4000/](http://127.0.0.1:4000/).
 
 ### Deploy
 
